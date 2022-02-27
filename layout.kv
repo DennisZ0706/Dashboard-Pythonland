@@ -1,0 +1,3390 @@
+#:include popup_attraction.kv
+#:include popup_malfunction.kv
+#:include popup_inspection.kv
+#:include popup_maintance.kv
+#:include popup_inlog.kv
+#:include popup_password.kv
+
+<Mainscreen>
+
+    total_malfunction:total_malfunction
+    total_off:total_off
+    total_morningcheck:total_morningcheck
+    total_running:total_running
+    total_on_park:total_on_park
+
+    attr1_icon:attr1_icon
+    attr2_icon:attr2_icon
+    attr3_icon:attr3_icon
+    attr4_icon:attr4_icon
+    attr5_icon:attr5_icon
+    attr6_icon:attr6_icon
+    attr7_icon:attr7_icon
+    attr8_icon:attr8_icon
+    attr9_icon:attr9_icon
+    attr10_icon:attr10_icon
+    attr11_icon:attr11_icon
+    attr12_icon:attr12_icon
+    attr13_icon:attr13_icon
+    attr14_icon:attr14_icon
+    attr15_icon:attr15_icon
+    attr16_icon:attr16_icon
+    attr17_icon:attr17_icon
+    attr18_icon:attr18_icon
+    attr19_icon:attr19_icon
+    attr20_icon:attr20_icon
+    attr21_icon:attr21_icon
+    attr22_icon:attr22_icon
+    attr23_icon:attr23_icon
+    attr24_icon:attr24_icon
+    attr25_icon:attr25_icon
+    attr26_icon:attr26_icon
+    attr27_icon:attr27_icon
+    attr28_icon:attr28_icon
+
+
+    attr1_status:attr1_status
+    attr2_status:attr2_status
+    attr3_status:attr3_status
+    attr4_status:attr4_status
+    attr5_status:attr5_status
+    attr6_status:attr6_status
+    attr7_status:attr7_status
+    attr8_status:attr8_status
+    attr9_status:attr9_status
+    attr10_status:attr10_status
+    attr11_status:attr11_status
+    attr12_status:attr12_status
+    attr13_status:attr13_status
+    attr14_status:attr14_status
+    attr15_status:attr15_status
+    attr16_status:attr16_status
+    attr17_status:attr17_status
+    attr18_status:attr18_status
+    attr19_status:attr19_status
+    attr20_status:attr20_status
+    attr21_status:attr21_status
+    attr22_status:attr22_status
+    attr23_status:attr23_status
+    attr24_status:attr24_status
+    attr25_status:attr25_status
+    attr26_status:attr26_status
+    attr27_status:attr27_status
+    attr28_status:attr28_status
+
+    attr1_test1:attr1_test1
+    attr2_test1:attr2_test1
+    attr3_test1:attr3_test1
+    attr4_test1:attr4_test1
+    attr5_test1:attr5_test1
+    attr6_test1:attr6_test1
+    attr7_test1:attr7_test1
+    attr8_test1:attr8_test1
+    attr9_test1:attr9_test1
+    attr10_test1:attr10_test1
+    attr11_test1:attr11_test1
+    attr12_test1:attr12_test1
+    attr13_test1:attr13_test1
+    attr14_test1:attr14_test1
+    attr15_test1:attr15_test1
+    attr16_test1:attr16_test1
+    attr17_test1:attr17_test1
+    attr18_test1:attr18_test1
+    attr19_test1:attr19_test1
+    attr20_test1:attr20_test1
+    attr21_test1:attr21_test1
+    attr22_test1:attr22_test1
+    attr23_test1:attr23_test1
+    attr24_test1:attr24_test1
+    attr25_test1:attr25_test1
+    attr26_test1:attr26_test1
+    attr27_test1:attr27_test1
+    attr28_test1:attr28_test1
+
+    attr1_test2:attr1_test2
+    attr2_test2:attr2_test2
+    attr3_test2:attr3_test2
+    attr4_test2:attr4_test2
+    attr5_test2:attr5_test2
+    attr6_test2:attr6_test2
+    attr7_test2:attr7_test2
+    attr8_test2:attr8_test2
+    attr9_test2:attr9_test2
+    attr10_test2:attr10_test2
+    attr11_test2:attr11_test2
+    attr12_test2:attr12_test2
+    attr13_test2:attr13_test2
+    attr14_test2:attr14_test2
+    attr15_test2:attr15_test2
+    attr16_test2:attr16_test2
+    attr17_test2:attr17_test2
+    attr18_test2:attr18_test2
+    attr19_test2:attr19_test2
+    attr20_test2:attr20_test2
+    attr21_test2:attr21_test2
+    attr22_test2:attr22_test2
+    attr23_test2:attr23_test2
+    attr24_test2:attr24_test2
+    attr25_test2:attr25_test2
+    attr26_test2:attr26_test2
+    attr27_test2:attr27_test2
+    attr28_test2:attr28_test2
+
+    attr1_maintance1:attr1_maintance1
+    attr2_maintance1:attr2_maintance1
+    attr3_maintance1:attr3_maintance1
+    attr4_maintance1:attr4_maintance1
+    attr5_maintance1:attr5_maintance1
+    attr6_maintance1:attr6_maintance1
+    attr7_maintance1:attr7_maintance1
+    attr8_maintance1:attr8_maintance1
+    attr9_maintance1:attr9_maintance1
+    attr10_maintance1:attr10_maintance1
+    attr11_maintance1:attr11_maintance1
+    attr12_maintance1:attr12_maintance1
+    attr13_maintance1:attr13_maintance1
+    attr14_maintance1:attr14_maintance1
+    attr15_maintance1:attr15_maintance1
+    attr16_maintance1:attr16_maintance1
+    attr17_maintance1:attr17_maintance1
+    attr18_maintance1:attr18_maintance1
+    attr19_maintance1:attr19_maintance1
+    attr20_maintance1:attr20_maintance1
+    attr21_maintance1:attr21_maintance1
+    attr22_maintance1:attr22_maintance1
+    attr23_maintance1:attr23_maintance1
+    attr24_maintance1:attr24_maintance1
+    attr25_maintance1:attr25_maintance1
+    attr26_maintance1:attr26_maintance1
+    attr27_maintance1:attr27_maintance1
+    attr28_maintance1:attr28_maintance1
+
+    attr1_maintance2:attr1_maintance2
+    attr2_maintance2:attr2_maintance2
+    attr3_maintance2:attr3_maintance2
+    attr4_maintance2:attr4_maintance2
+    attr5_maintance2:attr5_maintance2
+    attr6_maintance2:attr6_maintance2
+    attr7_maintance2:attr7_maintance2
+    attr8_maintance2:attr8_maintance2
+    attr9_maintance2:attr9_maintance2
+    attr10_maintance2:attr10_maintance2
+    attr11_maintance2:attr11_maintance2
+    attr12_maintance2:attr12_maintance2
+    attr13_maintance2:attr13_maintance2
+    attr14_maintance2:attr14_maintance2
+    attr15_maintance2:attr15_maintance2
+    attr16_maintance2:attr16_maintance2
+    attr17_maintance2:attr17_maintance2
+    attr18_maintance2:attr18_maintance2
+    attr19_maintance2:attr19_maintance2
+    attr20_maintance2:attr20_maintance2
+    attr21_maintance2:attr21_maintance2
+    attr22_maintance2:attr22_maintance2
+    attr23_maintance2:attr23_maintance2
+    attr24_maintance2:attr24_maintance2
+    attr25_maintance2:attr25_maintance2
+    attr26_maintance2:attr26_maintance2
+    attr27_maintance2:attr27_maintance2
+    attr28_maintance2:attr28_maintance2
+
+    AnchorLayout:
+
+        size: root.width, root.height
+        anchor_x: 'left'
+        anchor_y: 'top'      
+
+
+        BoxLayout:
+
+            orientation: 'vertical'
+            size_hint: (1, 1)
+
+            BoxLayout:
+
+                orientation: 'horizontal'
+                size_hint: (1, 0.1)
+                spacing: '4dp'
+                padding: '4dp'
+
+                Image: 
+                    source: 'Img/Logo.jpg'
+                    size_hint: (0.1, 1)
+                    allow_stretch: True
+        
+                Label:
+                    size_hint: (0.6, 1)
+                    text: "Pythonland Park Attractions"
+                    font_size: 1.22*self.height
+                    font_name: 'Fonts/Jurassic Park.ttf'
+                    bold: True
+                    color: (224/255, 224/255, 224/255, 255/255)
+                    background_color: (32/255, 32/255, 32/255, 255/255)
+                    canvas.before:
+                        Color:
+                            rgba: self.background_color
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos
+            
+                Label:
+                    size_hint: (0.1, 1)
+                    text: root.day + "\n" + root.date
+                    halign: 'center'
+                    font_size: 0.225*self.height
+                    bold: True
+                    color: (192/255, 192/255, 192/255, 255/255)
+                    background_color: (32/255, 32/255, 32/255, 255/255)
+                    canvas.before:
+                        Color:
+                            rgba: self.background_color
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos
+
+                AnchorLayout:
+                    size_hint: (0.1, 1)
+                    anchor_x: 'center'
+                    anchor_y: 'center'    
+                    background_color: (32/255, 32/255, 32/255, 255/255)
+                    canvas.before:
+                        Color:
+                            rgba: self.background_color
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos  
+
+                    Label:
+                        size_hint: (0.7, 0.5)
+                        text: root.clock_time
+                        font_size: 0.7*self.height
+                        font_name: 'Fonts/DS-DIGIT.ttf'
+                        color: (0/255, 255/255, 0/255, 255/255)
+                        background_color: (0/255, 0/255, 0/255, 255/255)
+                        canvas.before:
+                            Color:
+                                rgba: self.background_color
+                            Rectangle:
+                                size: self.size
+                                pos: self.pos
+                    
+                BoxLayout:
+                    size_hint: (0.1, 1)
+                    orientation: 'horizontal'
+                    spacing: '0dp'
+                    padding: '0dp'
+                
+                    Image:
+                        source: root.Img_openinghours
+                        size_hint: (0.3, 1)
+                        background_color: (32/255, 32/255, 32/255, 255/255)
+                        canvas.before:
+                            Color:
+                                rgba: self.background_color
+                            Rectangle:
+                                size: self.size
+                                pos: self.pos 
+
+                    Label:
+                        size_hint: (0.7, 1)
+                        text: root.openinghours
+                        font_size: 0.25*self.height
+                        bold: True
+                        color: (192/255, 192/255, 192/255, 255/255)
+                        background_color: (32/255, 32/255, 32/255, 255/255)
+                        canvas.before:
+                            Color:
+                                rgba: self.background_color
+                            Rectangle:
+                                size: self.size
+                                pos: self.pos
+
+            BoxLayout:
+
+                orientation: 'horizontal'
+                size_hint: (1, 0.12)
+                spacing: '4dp'
+                padding: '4dp'
+
+                BoxLayout:
+
+                    orientation: 'vertical'
+                    size_hint: (0.185, 1)
+                    
+                    Label:
+                        size_hint: (1, 0.3)
+                        text: "Op storing"
+                        font_size: 0.55*self.height
+                        #font_name: 'Fonts/VirtualRot-Regular.ttf'
+                        color: (255/255, 0/255, 0/255, 255/255)
+                        background_color: (32/255, 32/255, 32/255, 255/255)
+                        canvas.before:
+                            Color:
+                                rgba: self.background_color
+                            Rectangle:
+                                size: self.size
+                                pos: self.pos
+                    
+                    Label:
+                        id: total_malfunction
+                        size_hint: (1, 0.7)
+                        text: ""
+                        font_size: 0.8*self.height
+                        #font_name: 'Fonts/VirtualRot-Regular.ttf'
+                        bold: True
+                        color: (255/255, 0/255, 0/255, 255/255)
+                        background_color: (32/255, 32/255, 32/255, 255/255)
+                        canvas.before:
+                            Color:
+                                rgba: self.background_color
+                            Rectangle:
+                                size: self.size
+                                pos: self.pos
+
+                BoxLayout:
+
+                    orientation: 'vertical'
+                    size_hint: (0.185, 1)
+                    
+                    Label:
+                        size_hint: (1, 0.3)
+                        text: "Ochtendcheck vereist"
+                        font_size: 0.55*self.height
+                        #font_name: 'Fonts/VirtualRot-Regular.ttf'
+                        color: (255/255, 128/255, 0/255, 255/255)
+                        background_color: (32/255, 32/255, 32/255, 255/255)
+                        canvas.before:
+                            Color:
+                                rgba: self.background_color
+                            Rectangle:
+                                size: self.size
+                                pos: self.pos
+                    
+                    Label:
+                        id: total_off
+                        size_hint: (1, 0.7)
+                        text: ""
+                        font_size: 0.8*self.height
+                        #font_name: 'Fonts/VirtualRot-Regular.ttf'
+                        bold: True
+                        color: (255/255, 128/255, 0/255, 255/255)
+                        background_color: (32/255, 32/255, 32/255, 255/255)
+                        canvas.before:
+                            Color:
+                                rgba: self.background_color
+                            Rectangle:
+                                size: self.size
+                                pos: self.pos
+                
+                BoxLayout:
+
+                    orientation: 'vertical'
+                    size_hint: (0.185, 1)
+                    
+                    Label:
+                        size_hint: (1, 0.3)
+                        text: "Ochtendcheck actief"
+                        font_size: 0.55*self.height
+                        #font_name: 'Fonts/VirtualRot-Regular.ttf'
+                        color: (255/255, 255/255, 0/255, 255/255)
+                        background_color: (32/255, 32/255, 32/255, 255/255)
+                        canvas.before:
+                            Color:
+                                rgba: self.background_color
+                            Rectangle:
+                                size: self.size
+                                pos: self.pos
+                    
+                    Label:
+                        id: total_morningcheck
+                        size_hint: (1, 0.7)
+                        text: ""
+                        font_size: 0.8*self.height
+                        #font_name: 'Fonts/VirtualRot-Regular.ttf'
+                        bold: True
+                        color: (255/255, 255/255, 0/255, 255/255)
+                        background_color: (32/255, 32/255, 32/255, 255/255)
+                        canvas.before:
+                            Color:
+                                rgba: self.background_color
+                            Rectangle:
+                                size: self.size
+                                pos: self.pos
+
+                BoxLayout:
+
+                    orientation: 'vertical'
+                    size_hint: (0.185, 1)
+                    
+                    Label:
+                        size_hint: (1, 0.3)
+                        text: "Gereed om te starten"
+                        font_size: 0.55*self.height
+                        #font_name: 'Fonts/VirtualRot-Regular.ttf'
+                        color: (0/255, 255/255, 0/255, 255/255)
+                        background_color: (32/255, 32/255, 32/255, 255/255)
+                        canvas.before:
+                            Color:
+                                rgba: self.background_color
+                            Rectangle:
+                                size: self.size
+                                pos: self.pos
+                    
+                    Label:
+                        id: total_running
+                        size_hint: (1, 0.7)
+                        text: ""
+                        font_size: 0.8*self.height
+                        #font_name: 'Fonts/VirtualRot-Regular.ttf'
+                        bold: True
+                        color: (0/255, 255/255, 0/255, 255/255)
+                        background_color: (32/255, 32/255, 32/255, 255/255)
+                        canvas.before:
+                            Color:
+                                rgba: self.background_color
+                            Rectangle:
+                                size: self.size
+                                pos: self.pos
+
+                BoxLayout:
+
+                    orientation: 'vertical'
+                    size_hint: (0.26, 1)
+                    
+                    Label:
+                        size_hint: (1, 0.3)
+                        text: "Totaal aantal Attracties"
+                        font_size: 0.6*self.height
+                        #font_name: 'Fonts/VirtualRot-Regular.ttf'
+                        color: (192/255, 192/255, 192/255, 255/255)
+                        background_color: (32/255, 32/255, 32/255, 255/255)
+                        canvas.before:
+                            Color:
+                                rgba: self.background_color
+                            Rectangle:
+                                size: self.size
+                                pos: self.pos
+                    
+                    Label:
+                        id: total_on_park
+                        size_hint: (1, 0.7)
+                        text: ""
+                        font_size: 1*self.height
+                        #font_name: 'Fonts/VirtualRot-Regular.ttf'
+                        bold: True
+                        color: (192/255, 192/255, 192/255, 255/255)
+                        background_color: (32/255, 32/255, 32/255, 255/255)
+                        canvas.before:
+                            Color:
+                                rgba: self.background_color
+                            Rectangle:
+                                size: self.size
+                                pos: self.pos
+
+                        
+            BoxLayout:
+
+                orientation: 'horizontal'
+                size_hint: (1, 0.78)
+                spacing: '2dp'
+                padding: '2dp'
+
+                FloatLayout:
+
+                    size_hint: (0.74, 1)
+                    canvas.before:
+                        Rectangle:
+                            pos: self.pos
+                            size: self.size
+                            source: 'Img/Map_Pythonland_3.jpg'
+                    
+                    AttractionButton:
+                        id: attr1_icon
+                        pos_hint: {'x':0.35, 'top':0.19} 
+                        size_hint: (0.0605, 0.0848)
+                        background_normal: ''
+                        background_color: (187/255,219/255,152/255,255)
+                        on_release: root.show_attraction(root.attraction1)
+
+                        Image:
+                            source:'Img/Adderrad_hoover.jpg' if attr1_name.hovered or attr1_icon.hovered else 'Img/Adderrad.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+                    
+                    AttractionButton:
+                        id: attr2_icon
+                        pos_hint:  {'x':0.02, 'top':0.19}
+                        size_hint:  (0.191, 0.109)
+                        background_normal: ''
+                        background_color: (200/255,226/255,165/255,255)
+                        on_release: root.show_attraction(root.attraction2)
+
+                        Image:
+                            source:'Img/Anaconda_hoover.jpg' if attr2_name.hovered or attr2_icon.hovered else 'Img/Anaconda.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+
+                    AttractionButton:
+                        id: attr3_icon
+                        pos_hint: {'x':0.206, 'top':0.475}
+                        size_hint: (0.068, 0.055)
+                        background_normal: ''
+                        background_color: (195/255,224/255,160/255,255)
+                        on_release: root.show_attraction(root.attraction3)
+
+                        Image:
+                            source: 'Img/Ballenzee_hoover.jpg' if attr3_name.hovered or attr3_icon.hovered else 'Img/Ballenzee.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+
+                    AttractionButton:
+                        id: attr4_icon
+                        pos_hint: {'x':0.875, 'top':0.54}
+                        size_hint: (0.0369, 0.098)
+                        background_normal: ''
+                        background_color: (188/255,220/255,153/255,255)
+                        on_release: root.show_attraction(root.attraction4)
+
+                        Image:
+                            source: 'Img/Basket_Drop_hoover.jpg' if attr4_name.hovered or attr4_icon.hovered else 'Img/Basket_Drop.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+
+                    AttractionButton:
+                        id: attr5_icon
+                        pos_hint: {'x':0.25, 'top':0.38}
+                        size_hint: (0.098, 0.0548)
+                        background_normal: ''
+                        background_color: (185/255,218/255,149/255,255)
+                        on_release: root.show_attraction(root.attraction5)
+
+                        Image:
+                            source: 'Img/Black_Mamba_hoover.jpg' if attr5_name.hovered or attr5_icon.hovered else 'Img/Black_Mamba.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+                    
+                    AttractionButton:
+                        id: attr6_icon
+                        pos_hint: {'x':0.25, 'top':0.608}
+                        size_hint: (0.082, 0.055)
+                        background_normal: ''
+                        background_color: (183/255,219/255,149/255,255)
+                        on_release: root.show_attraction(root.attraction6)
+
+                        Image:
+                            source: 'Img/Cobra_hoover.jpg' if attr6_name.hovered or attr6_icon.hovered else 'Img/Cobra.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+                    
+                    AttractionButton:
+                        id: attr7_icon
+                        pos_hint: {'x':0.445, 'top':0.245}
+                        size_hint: (0.054, 0.075)
+                        background_normal: ''
+                        background_color: (180/255,216/255,144/255,255)
+                        on_release: root.show_attraction(root.attraction7)
+
+                        Image:
+                            source: 'Img/Graaf_Slis_hoover.jpg' if attr7_name.hovered or attr7_icon.hovered else 'Img/Graaf_Slis.jpg' 
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+
+                    AttractionButton:
+                        id: attr8_icon
+                        pos_hint: {'x':0.03, 'top':0.5}
+                        size_hint: (0.079, 0.074)
+                        background_normal: ''
+                        background_color: (200/255,226/255,165/255,255)
+                        on_release: root.show_attraction(root.attraction8)
+
+                        Image:
+                            source: 'Img/Happy_Ajar_hoover.jpg' if attr8_name.hovered or attr8_icon.hovered else 'Img/Happy_Ajar.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+
+                    AttractionButton:
+                        id: attr9_icon
+                        pos_hint: {'x':0.45, 'top':0.146}
+                        size_hint: (0.11, 0.04)
+                        background_normal: ''
+                        background_color: (184/255,220/255,150/255,255)
+                        on_release: root.show_attraction(root.attraction9)
+
+                        Image:
+                            source: 'Img/Jumpy_XL_hoover.jpg' if attr9_name.hovered or attr9_icon.hovered else 'Img/Jumpy_XL.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+
+                    AttractionButton:
+                        id: attr10_icon
+                        pos_hint: {'x':0.265, 'top':0.705}
+                        size_hint: (0.055, 0.08)
+                        background_normal: ''
+                        background_color: (151/255,217/255,241/255,255)
+                        on_release: root.show_attraction(root.attraction10)
+
+                        Image:
+                            source: 'Img/Jungle_Adventures_hoover.jpg' if attr10_name.hovered or attr10_icon.hovered else 'Img/Jungle_Adventures.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+
+                    AttractionButton:
+                        id: attr11_icon
+                        pos_hint: {'x':0.55, 'top':0.4}
+                        size_hint: (0.12, 0.0335)
+                        background_normal: ''
+                        background_color: (191/255,221/255,157/255,255)
+                        on_release: root.show_attraction(root.attraction11)
+
+                        Image:
+                            source: 'Img/Kaa_trein_hoover.jpg' if attr11_name.hovered or attr11_icon.hovered else 'Img/Kaa_trein.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+
+                    AttractionButton:
+                        id: attr12_icon
+                        pos_hint: {'x':0.86, 'top':0.3}
+                        size_hint: (0.085, 0.065)
+                        background_normal: ''
+                        background_color: (193/255,223/255,159/255,255)
+                        on_release: root.show_attraction(root.attraction12)
+
+                        Image:
+                            source: 'Img/Medusa_hoover.jpg' if attr12_name.hovered or attr12_icon.hovered else 'Img/Medusa.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+
+                    AttractionButton:
+                        id: attr13_icon
+                        pos_hint: {'x':0.61, 'top':0.25}
+                        size_hint: (0.037, 0.074)
+                        background_normal: ''
+                        background_color: (188/255,220/255,153/255,255)
+                        on_release: root.show_attraction(root.attraction13)
+
+                        Image:
+                            source: 'Img/Niagara_Roetsj_hoover.jpg' if attr13_name.hovered or attr13_icon.hovered else 'Img/Niagara_Roetsj.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+                    
+                    AttractionButton:
+                        id: attr14_icon
+                        pos_hint: {'x':0.17, 'top':0.26}
+                        size_hint: (0.076, 0.0698)
+                        background_normal: ''
+                        background_color: (200/255,226/255,165/255,255)
+                        on_release: root.show_attraction(root.attraction14)
+
+                        Image:
+                            source: 'Img/Paradijsslang_hoover.jpg' if attr14_name.hovered or attr14_icon.hovered else 'Img/Paradijsslang.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+
+                    AttractionButton:
+                        id: attr15_icon
+                        pos_hint: {'x':0.73, 'top':0.413}
+                        size_hint: (0.059, 0.055)
+                        background_normal: ''
+                        background_color: (189/255,221/255,154/255,255)
+                        on_release: root.show_attraction(root.attraction15)
+
+                        Image:
+                            source: 'Img/Pie_Piraat_hoover.jpg' if attr15_name.hovered or attr15_icon.hovered else 'Img/Pie_Piraat.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+
+                    AttractionButton:
+                        id: attr16_icon
+                        pos_hint: {'x':0.09, 'top':0.813}
+                        size_hint: (0.095, 0.0695)
+                        background_normal: ''
+                        background_color: (188/255,220/255,153/255,255)
+                        on_release: root.show_attraction(root.attraction16)
+
+                        Image:
+                            source: 'Img/Pulpo_hoover.jpg' if attr16_name.hovered or attr16_icon.hovered else 'Img/Pulpo.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+                    
+                    AttractionButton:
+                        id: attr17_icon
+                        pos_hint: {'x':0.38, 'top':0.86}
+                        size_hint: (0.18, 0.08)
+                        background_normal: ''
+                        background_color: (188/255,220/255,153/255,255)
+                        on_release: root.show_attraction(root.attraction17)
+
+                        Image:
+                            source: 'Img/Python_hoover.jpg' if attr17_name.hovered or attr17_icon.hovered else 'Img/Python.jpg' 
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+                    
+                    AttractionButton:
+                        id: attr18_icon
+                        pos_hint: {'x':0.49, 'top':0.64}
+                        size_hint: (0.091, 0.08)
+                        background_normal: ''
+                        background_color: (188/255,220/255,153/255,255)
+                        on_release: root.show_attraction(root.attraction18)
+
+                        Image:
+                            source: 'Img/Ratelslang_hoover.jpg' if attr18_name.hovered or attr18_icon.hovered else 'Img/Ratelslang.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+
+                    AttractionButton:
+                        id: attr19_icon
+                        pos_hint: {'x':0.43, 'top':0.45}
+                        size_hint: (0.071, 0.0545)
+                        background_normal: ''
+                        background_color: (196/255,224/255,163/255,255)
+                        on_release: root.show_attraction(root.attraction19)
+
+                        Image:
+                            source: 'Img/Safari_Jeeps_hoover.jpg' if attr19_name.hovered or attr19_icon.hovered else 'Img/Safari_Jeeps.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+                    
+                    AttractionButton:
+                        id: attr20_icon
+                        pos_hint: {'x':0.845, 'top':0.22}
+                        size_hint: (0.065, 0.06)
+                        background_normal: ''
+                        background_color: (191/255,221/255,157/255,255)
+                        on_release: root.show_attraction(root.attraction20)
+
+                        Image:
+                            source: 'Img/Sahara_swing_hoover.jpg' if attr20_name.hovered or attr20_icon.hovered else 'Img/Sahara_swing.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+
+                    AttractionButton:
+                        id: attr21_icon
+                        pos_hint: {'x':0.728, 'top':0.64}
+                        size_hint: (0.072, 0.07)
+                        background_normal: ''
+                        background_color: (180/255,217/255,147/255,255)
+                        on_release: root.show_attraction(root.attraction21)
+
+                        Image:
+                            source: 'Img/Slangenkuil_hoover.jpg' if attr21_name.hovered or attr21_icon.hovered else 'Img/Slangenkuil.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+                    
+                    AttractionButton:
+                        id: attr22_icon
+                        pos_hint: {'x':0.28, 'top':0.848}
+                        size_hint: (0.074, 0.065)
+                        background_normal: ''
+                        background_color: (188/255,220/255,153/255,255)
+                        on_release: root.show_attraction(root.attraction22)
+
+                        Image:
+                            source: 'Img/Snake_Bite_hoover.jpg' if attr22_name.hovered or attr22_icon.hovered else 'Img/Snake_Bite.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+
+                    AttractionButton:
+                        id: attr23_icon
+                        pos_hint: {'x':0.52, 'top':0.218}
+                        size_hint: (0.055, 0.05)
+                        background_normal: ''
+                        background_color: (197/255,217/255,144/255,255)
+                        on_release: root.show_attraction(root.attraction23)
+
+                        Image:
+                            source: 'Img/Snake_Charmer_hoover.jpg' if attr23_name.hovered or attr23_icon.hovered else 'Img/Snake_Charmer.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+                    
+                    AttractionButton:
+                        id: attr24_icon
+                        pos_hint: {'x':0.758, 'top':0.56}
+                        size_hint: (0.076, 0.08)
+                        background_normal: ''
+                        background_color: (179/255,217/255,144/255,255)
+                        on_release: root.show_attraction(root.attraction24)
+        
+                        Image:
+                            source: 'Img/Snaky_Rivers_hoover.jpg' if attr24_name.hovered or attr24_icon.hovered else 'Img/Snaky_Rivers.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+
+                    AttractionButton:
+                        id: attr25_icon
+                        pos_hint: {'x':0.814, 'top':0.46}
+                        size_hint: (0.038, 0.0895)
+                        background_normal: ''
+                        background_color: (188/255,220/255,153/255,255)
+                        on_release: root.show_attraction(root.attraction25)
+
+                        Image:
+                            source: 'Img/Spookhuis_hoover.jpg' if attr25_name.hovered or attr25_icon.hovered else 'Img/Spookhuis.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+
+                    AttractionButton:
+                        id: attr26_icon
+                        pos_hint: {'x':0.63, 'top':0.59}
+                        size_hint: (0.06, 0.044)
+                        background_normal: ''
+                        background_color: (151/255,217/255,241/255,255)
+                        on_release: root.show_attraction(root.attraction26)
+
+                        Image:
+                            source: 'Img/Swamp_Trouble_hoover.jpg' if attr26_name.hovered or attr26_icon.hovered else 'Img/Swamp_Trouble.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+
+                    AttractionButton:
+                        id: attr27_icon
+                        pos_hint: {'x':0.03, 'top':0.38}
+                        size_hint: (0.13, 0.118)
+                        background_normal: ''
+                        background_color: (200/255,226/255,165/255,255)
+                        on_release: root.show_attraction(root.attraction27)
+
+                        Image:
+                            source: 'Img/The_Amazone_hoover.jpg' if attr27_name.hovered or attr27_icon.hovered else 'Img/The_Amazone.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+
+                    AttractionButton:
+                        id: attr28_icon
+                        pos_hint: {'x':0.315, 'top':0.527}
+                        size_hint: (0.049, 0.046)
+                        background_normal: ''
+                        background_color: (197/255,225/255,164/255,255)
+                        on_release: root.show_attraction(root.attraction28)
+
+                        Image:
+                            source: 'Img/Vipers_hoover.jpg' if attr28_name.hovered or attr28_icon.hovered else 'Img/Vipers.jpg'
+                            size: self.parent.width, self.parent.height
+                            center_x: self.parent.center_x
+                            center_y: self.parent.center_y
+                     
+                BoxLayout:
+
+                    orientation: 'vertical'
+                    size_hint: (0.26, 1)
+                    spacing: '1dp'
+                    padding: '1dp'
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr1_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr1_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction1.name
+                            font_size: 0.9*self.height if self.hovered or root.attr1_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr1_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr1_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction1)
+
+                        Image:
+                            id: attr1_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr1_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr1_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr1_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr2_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr2_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction2.name
+                            font_size: 0.9*self.height if self.hovered or root.attr2_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr2_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr2_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction2)
+
+                        Image:
+                            id: attr2_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr2_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr2_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr2_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr3_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr3_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction3.name
+                            font_size: 0.9*self.height if self.hovered or root.attr3_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr3_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr3_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction3)
+
+                        Image:
+                            id: attr3_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr3_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr3_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr3_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr4_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr4_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction4.name
+                            font_size: 0.9*self.height if self.hovered or root.attr4_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr4_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr4_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction4)
+
+                        Image:
+                            id: attr4_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr4_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr4_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr4_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr5_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr5_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction5.name
+                            font_size: 0.9*self.height if self.hovered or root.attr5_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr5_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr5_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction5)
+
+                        Image:
+                            id: attr5_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr5_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr5_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr5_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr6_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr6_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction6.name
+                            font_size: 0.9*self.height if self.hovered or root.attr6_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr6_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr6_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction6)
+
+                        Image:
+                            id: attr6_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr6_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr6_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr6_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr7_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr7_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction7.name
+                            font_size: 0.9*self.height if self.hovered or root.attr7_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr7_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr7_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction7)
+
+                        Image:
+                            id: attr7_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr7_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr7_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr7_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr8_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr8_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction8.name
+                            font_size: 0.9*self.height if self.hovered or root.attr8_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr8_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr8_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction8)
+
+                        Image:
+                            id: attr8_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr8_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr8_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr8_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr9_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr9_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction9.name
+                            font_size: 0.9*self.height if self.hovered or root.attr9_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr9_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr9_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction9)
+
+                        Image:
+                            id: attr9_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr9_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr9_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr9_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr10_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr10_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction10.name
+                            font_size: 0.9*self.height if self.hovered or root.attr10_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr10_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr10_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction10)
+
+                        Image:
+                            id: attr10_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr10_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr10_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr10_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr11_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr11_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction11.name
+                            font_size: 0.9*self.height if self.hovered or root.attr11_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr11_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr11_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction11)
+
+                        Image:
+                            id: attr11_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr11_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr11_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr11_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr12_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr12_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction12.name
+                            font_size: 0.9*self.height if self.hovered or root.attr12_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr12_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr12_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction12)
+
+                        Image:
+                            id: attr12_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr12_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr12_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr12_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr13_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr13_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction13.name
+                            font_size: 0.9*self.height if self.hovered or root.attr13_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr13_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr13_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction13)
+
+                        Image:
+                            id: attr13_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr13_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr13_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr13_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr14_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr14_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction14.name
+                            font_size: 0.9*self.height if self.hovered or root.attr14_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr14_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr14_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction14)
+
+                        Image:
+                            id: attr14_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr14_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr14_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr14_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr15_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr15_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction15.name
+                            font_size: 0.9*self.height if self.hovered or root.attr15_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr15_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr15_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction15)
+
+                        Image:
+                            id: attr15_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr15_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr15_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr15_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr16_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr16_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction16.name
+                            font_size: 0.9*self.height if self.hovered or root.attr16_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr16_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr16_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction16)
+
+                        Image:
+                            id: attr16_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr16_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr16_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr16_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr17_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr17_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction17.name
+                            font_size: 0.9*self.height if self.hovered or root.attr17_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr17_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr17_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction17)
+
+                        Image:
+                            id: attr17_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr17_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr17_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr17_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                    
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr18_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr18_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction18.name
+                            font_size: 0.9*self.height if self.hovered or root.attr18_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr18_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr18_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction18)
+
+                        Image:
+                            id: attr18_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr18_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr18_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr18_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                    
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr19_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr19_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction19.name
+                            font_size: 0.9*self.height if self.hovered or root.attr19_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr19_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr19_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction19)
+
+                        Image:
+                            id: attr19_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr19_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr19_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr19_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                    
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr20_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr20_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction20.name
+                            font_size: 0.9*self.height if self.hovered or root.attr20_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr20_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr20_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction20)
+
+                        Image:
+                            id: attr20_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr20_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr20_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr20_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr21_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr21_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction21.name
+                            font_size: 0.9*self.height if self.hovered or root.attr21_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr21_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr21_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction21)
+
+                        Image:
+                            id: attr21_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr21_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr21_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr21_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                    
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr22_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr22_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction22.name
+                            font_size: 0.9*self.height if self.hovered or root.attr22_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr22_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr22_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction22)
+
+                        Image:
+                            id: attr22_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr22_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr22_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr22_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr23_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr23_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction23.name
+                            font_size: 0.9*self.height if self.hovered or root.attr23_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr23_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr23_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction23)
+
+                        Image:
+                            id: attr23_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr23_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr23_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr23_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr24_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr24_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction24.name
+                            font_size: 0.9*self.height if self.hovered or root.attr24_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr24_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr24_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction24)
+
+                        Image:
+                            id: attr24_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr24_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr24_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr24_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr25_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr25_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction25.name
+                            font_size: 0.9*self.height if self.hovered or root.attr25_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr25_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr25_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction25)
+
+                        Image:
+                            id: attr25_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr25_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr25_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr25_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr26_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr26_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction26.name
+                            font_size: 0.9*self.height if self.hovered or root.attr26_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr26_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr26_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction26)
+
+                        Image:
+                            id: attr26_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr26_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr26_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr26_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr27_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr27_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction27.name
+                            font_size: 0.9*self.height if self.hovered or root.attr27_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr27_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr27_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_press: root.show_attraction(root.attraction27)
+
+                        Image:
+                            id: attr27_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr27_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr27_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr27_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                    BoxLayout:
+
+                        orientation: 'horizontal'
+
+                        AnchorLayout:
+                            size_hint: (0.12, 1)
+                            anchor_x: 'center'
+                            anchor_y: 'center'    
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos  
+                            
+                            Image:
+                                id: attr28_status
+                                size_hint: (0.8, 0.8)
+                                source: ''            
+
+                        AttractionButton:
+                            id: attr28_name
+                            size_hint: (0.48, 1)
+                            text: root.attraction28.name
+                            font_size: 0.9*self.height if self.hovered or root.attr28_icon.hovered else 0.8*self.height
+                            text_size: self.size
+                            halign: 'left'
+                            color: root.hover_color if self.hovered or root.attr28_icon.hovered else (192/255, 192/255, 192/255, 255/255)
+                            outline_color: root.hover_outline if self.hovered or root.attr28_icon.hovered else (32/255, 32/255, 32/255, 255/255)
+                            outline_width: 1
+                            background_normal: ''
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            on_release: root.show_attraction(root.attraction28)
+
+                        Image:
+                            id: attr28_test1
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr28_test2
+                            size_hint: (0.1, 1)
+                            source: 'Img/test_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr28_maintance1
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                        
+                        Image:
+                            id: attr28_maintance2
+                            size_hint: (0.10, 1)
+                            source: 'Img/maintance_no.jpg'
+                            background_color: (32/255, 32/255, 32/255, 255/255)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos

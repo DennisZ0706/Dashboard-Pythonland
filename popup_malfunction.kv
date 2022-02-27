@@ -1,0 +1,301 @@
+<PopupMalfunction1Content>
+
+    attr_malfunction_info:attr_malfunction_info
+
+    malfunction_choice1:malfunction_choice1
+    malfunction_choice2:malfunction_choice2
+    malfunction_choice3:malfunction_choice3
+    
+    orientation: 'vertical'
+    padding: '15dp'
+    #spacing: '2dp'
+    background_color: (32/255, 32/255, 32/255, 255/255)
+    canvas.before:
+        Color:
+            rgba: self.background_color
+        Rectangle:
+            size: self.size
+            pos: self.pos
+        Color:
+            rgba:(255/255, 0/255, 0/255, 255/255)
+        Line:
+            width: 1
+            rectangle: self.x, self.y, self.width, self.height
+    
+    BoxLayout:
+        size_hint: (1, 0.25)
+        orientation: 'vertical'
+
+
+        Label:
+            size_hint:(1, 0.6)
+            text: root.attr_name
+            text_size: self.size
+            halign: 'center'
+            valign: 'top'
+            font_size: 0.7*self.height
+            font_name: 'Fonts/Stenciland free.otf'
+            color: (233/255, 233/255, 251/255, 255/255)
+        
+        Label:
+            size_hint:(1, 0.4)
+            text: "Storing Attractie"
+            text_size: self.size
+            halign: 'center'
+            valign: 'top'
+            font_size: 0.5*self.height
+            font_name: 'Fonts/Stenciland free.otf'
+            color: (233/255, 233/255, 251/255, 255/255)
+    
+    BoxLayout:
+        size_hint: (1, 0.1)
+        orientation: 'horizontal'
+
+        CheckBox:
+            id: malfunction_choice1
+            size_hint: (0.1, 1)
+            group: "options"
+        
+        Label:
+            size_hint:(0.9, 1)
+            text: "Keuring"
+            text_size: self.size
+            halign: 'left'
+            valign: 'center'
+            font_size: 0.6*self.height
+            font_name: 'Fonts/Biko_Regular.otf'
+            color: (233/255, 233/255, 251/255, 255/255)
+        
+    BoxLayout:
+        size_hint: (1, 0.1)
+        orientation: 'horizontal'
+
+        CheckBox:
+            id: malfunction_choice2
+            size_hint: (0.1, 1)
+            group: "options"
+        
+        Label:
+            size_hint:(0.9, 1)
+            text: "Groot Onderhoud"
+            text_size: self.size
+            halign: 'left'
+            valign: 'center'
+            font_size: 0.6*self.height
+            font_name: 'Fonts/Biko_Regular.otf'
+            color: (233/255, 233/255, 251/255, 255/255)
+    
+    BoxLayout:
+        size_hint: (1, 0.1)
+        orientation: 'horizontal'
+
+        CheckBox:
+            id: malfunction_choice3
+            size_hint: (0.1, 1)
+            group: "options" 
+            on_release: root.attr_malfunction_info.focus = True
+        
+        Label:
+            size_hint:(0.9, 1)
+            text: "Anders"
+            text_size: self.size
+            halign: 'left'
+            valign: 'center'
+            font_size: 0.6*self.height
+            font_name: 'Fonts/Biko_Regular.otf'
+            color: (233/255, 233/255, 251/255, 255/255)
+
+        
+    AnchorLayout:
+
+        size_hint: (1, 0.24)
+        anchor_x: 'center'
+        anchor_y: 'center'    
+
+        TextInput:
+            id: attr_malfunction_info
+            size_hint: (0.8, 0.8)
+            text_size: self.size
+            halign: 'left'
+            valign: 'top'
+            font_size: 0.35*self.height
+            font_name: 'Fonts/Biko_Regular.otf'
+            color: (32/255, 32/255, 32/255, 255/255)
+            on_focus: root.malfunction_choice3.active = True
+            
+    
+
+    BoxLayout:
+
+        size_hint: (1, 0.21)
+        orientation: 'horizontal'
+
+        AnchorLayout:
+
+            size_hint: (1, 1)
+            anchor_x: 'center'
+            anchor_y: 'center'    
+            background_color: (32/255, 32/255, 32/255, 255/255)
+            canvas.before:
+                Color:
+                    rgba: self.background_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos  
+
+            Button:
+                size_hint:(0.4, 0.8)
+                text: "Bevestigen"
+                font_size: 0.4*self.height
+                font_name: 'Fonts/Biko_Bold.otf'
+                color: (233/255, 233/255, 251/255, 255/255)
+                outline_color: (32/255, 32/255, 32/255)
+                outline_width: 1
+                background_color: (255/255, 0/255, 0/255, 150/255)
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos  
+                on_press: 
+                    app.root.popup_attraction.content.register_malfunction(),
+                on_release: 
+                    app.root.popup_attraction.content.update_content(),
+                    root.malfunction_choice1.active = False
+                    root.malfunction_choice2.active = False
+                    root.malfunction_choice3.active = False
+
+<PopupscreenMalfunction2>
+    
+    orientation: 'vertical'
+    padding: '15dp'
+    #spacing: '2dp'
+    background_color: (32/255, 32/255, 32/255, 255/255)
+    canvas.before:
+        Color:
+            rgba: self.background_color
+        Rectangle:
+            size: self.size
+            pos: self.pos
+        Color:
+            rgba:(255/255, 0/255, 0/255, 255/255)
+        Line:
+            width: 1
+            rectangle: self.x, self.y, self.width, self.height
+    
+    BoxLayout:
+        size_hint: (1, 0.25)
+        orientation: 'vertical'
+
+
+        Label:
+            size_hint:(1, 0.6)
+            text: root.attr_name
+            text_size: self.size
+            halign: 'center'
+            valign: 'top'
+            font_size: 0.7*self.height
+            font_name: 'Fonts/Stenciland free.otf'
+            color: (233/255, 233/255, 251/255, 255/255)
+        
+        Label:
+            size_hint:(1, 0.4)
+            text: "Herstarten Attractie"
+            text_size: self.size
+            halign: 'center'
+            valign: 'top'
+            font_size: 0.5*self.height
+            font_name: 'Fonts/Stenciland free.otf'
+            color: (233/255, 233/255, 251/255, 255/255)
+    
+    AnchorLayout:
+    
+        size_hint: (1, 0.54)
+        anchor_x: 'center'
+        anchor_y: 'center'    
+        background_color: (32/255, 32/255, 32/255, 255/255)
+        canvas.before:
+            Color:
+                rgba: self.background_color
+            Rectangle:
+                size: self.size
+                pos: self.pos  
+
+        Label:
+            size_hint: (1, 0.25)
+            text_size: self.size
+            halign: 'center'
+            valign: 'center'
+            text: "Is check attractie " + root.attr_name + " uitgevoerd?"
+            font_size: 0.45*self.height
+            font_name: 'Fonts/Biko_Regular.otf'
+            color: (233/255, 233/255, 251/255, 255/255)
+
+    BoxLayout:
+
+        size_hint: (1, 0.21)
+        orientation: 'horizontal'
+
+        AnchorLayout:
+
+            size_hint: (0.5, 1)
+            anchor_x: 'center'
+            anchor_y: 'center'    
+            background_color: (32/255, 32/255, 32/255, 255/255)
+            canvas.before:
+                Color:
+                    rgba: self.background_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos  
+
+            Button:
+                size_hint:(0.8, 0.8)
+                text: "Yes"
+                font_size: 0.4*self.height
+                font_name: 'Fonts/Biko_Bold.otf'
+                color: (233/255, 233/255, 251/255, 255/255)
+                outline_color: (32/255, 32/255, 32/255)
+                outline_width: 1
+                background_color: (255/255, 0/255, 0/255, 150/255)
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos  
+                on_press: app.root.popup_attraction.content.undo_malfunction_yes()
+                on_release: app.root.popup_attraction.content.update_content()
+                
+        
+        AnchorLayout:
+
+            size_hint: (0.5, 1)
+            anchor_x: 'center'
+            anchor_y: 'center'    
+            background_color: (32/255, 32/255, 32/255, 255/255)
+            canvas.before:
+                Color:
+                    rgba: self.background_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos  
+
+            Button:
+                size_hint:(0.8, 0.8)
+                text: "No"
+                font_size: 0.4*self.height
+                font_name: 'Fonts/Biko_Bold.otf'
+                color: (233/255, 233/255, 251/255, 255/255)
+                outline_color: (32/255, 32/255, 32/255)
+                outline_width: 1
+                background_color: (255/255, 0/255, 0/255, 150/255)
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos  
+                on_press: app.root.popup_attraction.content.undo_malfunction_no()
+                on_release: app.root.popup_attraction.content.update_content()

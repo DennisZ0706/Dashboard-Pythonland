@@ -1,0 +1,218 @@
+<PopupscreenMaintance>
+
+    orientation: 'vertical'
+    padding: '15dp'
+    #spacing: '2dp'
+    background_color: (32/255, 32/255, 32/255, 255/255)
+    canvas.before:
+        Color:
+            rgba: self.background_color
+        Rectangle:
+            size: self.size
+            pos: self.pos
+        Color:
+            rgba:(0/255, 128/255, 255/255, 255/255)
+        Line:
+            width: 1
+            rectangle: self.x, self.y, self.width, self.height
+    
+    BoxLayout:
+        size_hint: (1, 0.25)
+        orientation: 'vertical'
+
+
+        Label:
+            size_hint:(1, 0.6)
+            text: root.attr_name
+            text_size: self.size
+            halign: 'center'
+            valign: 'top'
+            font_size: 0.7*self.height
+            font_name: 'Fonts/Stenciland free.otf'
+            color: (233/255, 233/255, 251/255, 255/255)
+        
+        Label:
+            size_hint:(1, 0.4)
+            text: "Planning Onderhoud"
+            text_size: self.size
+            halign: 'center'
+            valign: 'top'
+            font_size: 0.5*self.height
+            font_name: 'Fonts/Stenciland free.otf'
+            color: (233/255, 233/255, 251/255, 255/255)
+
+    BoxLayout:
+        size_hint: (1, 0.135)
+        orientation: 'horizontal'
+
+        Label:
+            size_hint: (0.6, 1)
+            text_size: self.size
+            halign: 'left'
+            valign: 'center'
+            text: "Onderhoudsbeurt 1"
+            font_size: 0.45*self.height
+            font_name: 'Fonts/Biko_Regular.otf'
+            color: (233/255, 233/255, 251/255, 255/255)
+        
+        AnchorLayout:
+            size_hint: (0.4, 1)
+            anchor_x: 'right'
+            anchor_y: 'center'    
+            background_color: (32/255, 32/255, 32/255, 255/255)
+            canvas.before:
+                Color:
+                    rgba: self.background_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos  
+        
+            DatePicker:
+                id: input_date_1
+                size_hint: (1, 0.9)
+                text: root.attr_date1
+                font_size: 0.5*self.height
+                bold: True
+                pHint: 0.4,0.4
+    
+    BoxLayout:
+        size_hint: (1, 0.135)
+        orientation: 'horizontal'
+
+        Label:
+            size_hint: (0.6, 1)
+            text_size: self.size
+            halign: 'left'
+            valign: 'center'
+            text: "Onderhoudsbeurt 2"
+            font_size: 0.45*self.height
+            font_name: 'Fonts/Biko_Regular.otf'
+            color: (233/255, 233/255, 251/255, 255/255)
+        
+        AnchorLayout:
+            size_hint: (0.4, 1)
+            anchor_x: 'right'
+            anchor_y: 'center'    
+            background_color: (32/255, 32/255, 32/255, 255/255)
+            canvas.before:
+                Color:
+                    rgba: self.background_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos  
+        
+            DatePicker:
+                id: input_date_2
+                size_hint: (1, 0.9)
+                text: root.attr_date2
+                font_size: 0.5*self.height
+                bold: True
+                pHint: 0.4,0.4
+    
+    BoxLayout:
+        size_hint: (1, 0.135)
+        orientation: 'horizontal'
+
+        Label:
+            size_hint: (0.6, 1)
+            text_size: self.size
+            halign: 'left'
+            valign: 'center'
+            text: "Onderhoudsbeurt 3"
+            font_size: 0.45*self.height
+            font_name: 'Fonts/Biko_Regular.otf'
+            color: (233/255, 233/255, 251/255, 255/255)
+        
+        AnchorLayout:
+            size_hint: (0.4, 1)
+            anchor_x: 'right'
+            anchor_y: 'center'    
+            background_color: (32/255, 32/255, 32/255, 255/255)
+            canvas.before:
+                Color:
+                    rgba: self.background_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos  
+        
+            DatePicker:
+                id: input_date_3
+                size_hint: (1, 0.9)
+                text: root.attr_date3
+                font_size: 0.5*self.height
+                bold: True
+                pHint: 0.4,0.4
+    
+    BoxLayout:
+        size_hint: (1, 0.135)
+        orientation: 'horizontal'
+
+        Label:
+            size_hint: (0.6, 1)
+            text_size: self.size
+            halign: 'left'
+            valign: 'center'
+            text: "Onderhoudsbeurt 4"
+            font_size: 0.45*self.height
+            font_name: 'Fonts/Biko_Regular.otf'
+            color: (233/255, 233/255, 251/255, 255/255)
+        
+        AnchorLayout:
+            size_hint: (0.4, 1)
+            anchor_x: 'right'
+            anchor_y: 'center'    
+            background_color: (32/255, 32/255, 32/255, 255/255)
+            canvas.before:
+                Color:
+                    rgba: self.background_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos  
+        
+            DatePicker:
+                id: input_date_4
+                size_hint: (1, 0.9)
+                text: root.attr_date4
+                font_size: 0.5*self.height
+                bold: True
+                pHint: 0.4,0.4
+                
+    AnchorLayout:
+
+        size_hint: (1, 0.21)
+        anchor_x: 'center'
+        anchor_y: 'center'    
+        background_color: (32/255, 32/255, 32/255, 255/255)
+        canvas.before:
+            Color:
+                rgba: self.background_color
+            Rectangle:
+                size: self.size
+                pos: self.pos  
+
+        Button:
+            size_hint:(0.4, 0.8)
+            text: "Bevestigen"
+            font_size: 0.4*self.height
+            font_name: 'Fonts/Biko_Bold.otf'
+            color: (233/255, 233/255, 251/255, 255/255)
+            outline_color: (32/255, 32/255, 32/255)
+            outline_width: 1
+            background_color: (0/255, 128/255, 255/255, 255/255)
+            canvas.before:
+                Color:
+                    rgba: self.background_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos  
+
+
+            on_press: 
+                root.attraction.adm_maintance.change_maintancedate(root.attraction.adm_maintance.maintance_1, input_date_1.text),
+                root.attraction.adm_maintance.change_maintancedate(root.attraction.adm_maintance.maintance_2, input_date_2.text),
+                root.attraction.adm_maintance.change_maintancedate(root.attraction.adm_maintance.maintance_3, input_date_3.text),
+                root.attraction.adm_maintance.change_maintancedate(root.attraction.adm_maintance.maintance_4, input_date_4.text),
+                app.root.popup_attraction.popup_maintance.dismiss()
+
+            on_release: 
+                app.root.popup_attraction.content.update_content()

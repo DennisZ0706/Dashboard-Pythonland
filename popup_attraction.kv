@@ -1,0 +1,1042 @@
+<PopupAttractionContent> 
+
+    attr_popup:attr_popup     
+    
+    attr_certification:attr_certification
+    attr_state:attr_state
+    attr_last_inspection_date:attr_last_inspection_date
+    attr_rapport_expiredate:attr_rapport_expiredate
+    attr_next_inspection_date:attr_next_inspection_date
+    attr_validity_rapport:attr_validity_rapport
+    attr_stopwatch:attr_stopwatch
+    attr_infopanel:attr_infopanel
+
+    btn_malfunction: btn_malfunction
+    btn_check:btn_check
+    btn_maintance1:btn_maintance1
+    btn_maintance2:btn_maintance2
+    btn_maintance3:btn_maintance3
+    btn_maintance4:btn_maintance4
+    btn_rapport1:btn_rapport1
+    btn_rapport2:btn_rapport2
+    btn_rapport3:btn_rapport3
+    btn_rapport4:btn_rapport4
+
+    id: attr_popup
+    orientation: 'vertical'
+    padding: '15dp'
+    spacing: '10dp'
+    background_color: (233/255, 233/255, 251/255, 255/255)
+    line_color: (32/255, 32/255, 32/255, 100/255)
+    canvas.before:
+        Color:
+            rgba: self.background_color
+        Rectangle:
+            size: self.size
+            pos: self.pos
+        Color:
+            rgba: self.line_color
+        Line:
+            width: 3
+            rectangle: self.x, self.y, self.width, self.height
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint:(1, 0.27)
+        
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint:(0.75, 1)
+
+            BoxLayout:
+                orientation: 'horizontal'
+                size_hint:(1, 0.5)        
+
+                Image:
+                    size_hint:(0.08, 1.1)
+                    source: 'Img/Logo1.jpg'
+                
+                Label:
+                    size_hint:(0.02, 1)
+                    text:""
+
+                Label:
+                    size_hint:(0.9, 1)
+                    text: root.attr_name
+                    text_size: self.size
+                    halign: 'left'
+                    valign: 'bottom'
+                    font_size: 0.8*self.height
+                    font_name: 'Fonts/Stenciland free.otf'
+                    bold: True
+                    color: (32/255, 32/255, 32/255, 255/255)
+            
+            BoxLayout:
+                size_hint:(1, 0.5)
+                orientation: 'horizontal'
+
+                BoxLayout:
+                    size_hint: (0.20, 1)
+                    orientation: 'vertical'
+
+                    Label:
+                        text: "Type attractie:"
+                        text_size: self.size
+                        halign: 'left'
+                        bold: True
+                        color: (32/255, 32/255, 32/255, 255/255)
+                    
+                    Label:
+                        text: "RAS-nummer:"
+                        text_size: self.size
+                        halign: 'left'
+                        bold: True
+                        color: (32/255, 32/255, 32/255, 255/255)
+                    
+                    Label:
+                        text: "Bouwjaar:"
+                        text_size: self.size
+                        halign: 'left'
+                        bold: True
+                        color: (32/255, 32/255, 32/255, 255/255)
+                
+                BoxLayout:
+                    size_hint: (0.20, 1)
+                    orientation: 'vertical'
+
+                    Label:
+                        text: root.attr_type
+                        text_size: self.size
+                        halign: 'left'
+                        color: (32/255, 32/255, 32/255, 255/255)
+                    
+                    Label: 
+                        text: root.attr_RAS_number
+                        text_size: self.size
+                        halign: 'left'
+                        color: (32/255, 32/255, 32/255, 255/255)
+                    
+                    Label: 
+                        text: root.attr_date_of_construction
+                        text_size: self.size
+                        halign: 'left'
+                        color: (32/255, 32/255, 32/255, 255/255)
+                
+                BoxLayout:
+                    size_hint: (0.20, 1)
+                    orientation: 'vertical'
+                
+                    Label:
+                        text: "Fabrikant"
+                        text_size: self.size
+                        halign: 'left'
+                        bold: True
+                        color: (32/255, 32/255, 32/255, 255/255)
+                    
+                    Label:
+                        text: "tel:"
+                        text_size: self.size
+                        halign: 'left'
+                        bold: True
+                        color: (32/255, 32/255, 32/255, 255/255)
+                    
+                    Label:
+                        text: "email:"
+                        text_size: self.size
+                        halign: 'left'
+                        bold: True
+                        color: (32/255, 32/255, 32/255, 255/255)
+                
+                BoxLayout:
+                    size_hint: (0.20, 1)
+                    orientation: 'vertical'
+
+                    Label: 
+                        text: root.attr_manufacturer
+                        text_size: self.size
+                        halign: 'left'
+                        color: (32/255, 32/255, 32/255, 255/255)
+                    
+                    Label:
+                        text: root.attr_tel
+                        text_size: self.size
+                        halign: 'left'
+                        color: (32/255, 32/255, 32/255, 255/255)
+                    
+                    Label: 
+                        text: root.attr_email
+                        text_size: self.size
+                        halign: 'left'
+                        color: (32/255, 32/255, 32/255, 255/255)
+                
+                Image:
+                    id: attr_certification
+                    size_hint:(0.2, 1)
+                    source: ""
+
+                
+
+        Image:
+            size_hint:(0.24, 1)
+            source: root.attr_image
+
+    BoxLayout:
+        size_hint:(1, 0.19)
+        orientation: 'horizontal'
+
+        BoxLayout:
+            size_hint: (0.25, 1)
+            orientation: 'vertical'
+
+            Label:
+                text: "Status keuring:"
+                text_size: self.size
+                halign: 'left'
+                font_size: 0.6*self.height
+                bold: True
+                color: (32/255, 32/255, 32/255, 255/255)
+            
+            Label:
+                text: "Geldigheidsduur Certificaat:"
+                text_size: self.size
+                halign: 'left'
+                font_size: 0.6*self.height
+                bold: True
+                color: (32/255, 32/255, 32/255, 255/255)
+            
+            Label:
+                text: "Datum laatste keuring:"
+                text_size: self.size
+                halign: 'left'
+                font_size: 0.6*self.height
+                bold: True
+                color: (32/255, 32/255, 32/255, 255/255)
+            
+            Label:
+                text: "Certificaat geldig tot:"
+                text_size: self.size
+                halign: 'left'
+                font_size: 0.6*self.height
+                bold: True
+                color: (32/255, 32/255, 32/255, 255/255)
+            
+            Label:
+                text: "Datum volgende keuring:"
+                text_size: self.size
+                halign: 'left'
+                font_size: 0.6*self.height
+                bold: True
+                color: (32/255, 32/255, 32/255, 255/255)
+        
+        BoxLayout:
+            size_hint: (0.2, 1)
+            orientation: 'vertical'
+
+            Label:
+                id: attr_state
+                text: ""
+                text_size: self.size
+                halign: 'left'
+                font_size: 0.6*self.height
+                color: (32/255, 32/255, 32/255, 255/255)
+            
+            BoxLayout:
+                orientation: "horizontal"
+            
+                Label:
+                    size_hint: (0.1, 1)
+                    id: attr_validity_rapport
+                    text: ""
+                    text_size: self.size
+                    halign: 'left'
+                    font_size: 0.6*self.height
+                    color: (32/255, 32/255, 32/255, 255/255)
+                
+                Label:
+                    size_hint: (0.9, 1)
+                    text: "jaar"
+                    text_size: self.size
+                    halign: 'left'
+                    font_size: 0.6*self.height
+                    color: (32/255, 32/255, 32/255, 255/255)
+            
+            Label:
+                id: attr_last_inspection_date
+                text: ""
+                text_size: self.size
+                halign: 'left'
+                font_size: 0.6*self.height
+                color: (32/255, 32/255, 32/255, 255/255)
+            
+            Label:
+                id: attr_rapport_expiredate
+                text: ""
+                text_size: self.size
+                halign: 'left'
+                font_size: 0.6*self.height
+                color: (32/255, 32/255, 32/255, 255/255)
+            
+            Label:
+                id: attr_next_inspection_date
+                text: ""
+                text_size: self.size
+                halign: 'left'
+                font_size: 0.6*self.height
+                color: (32/255, 32/255, 32/255, 255/255)
+        
+        BoxLayout:
+            size_hint: (0.25, 1)
+            orientation: 'vertical'
+
+            AnchorLayout:
+                anchor_x: 'left'
+                anchor_y: 'center'    
+                background_color: (233/255, 233/255, 251/255, 255/255)
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos  
+
+                Button:
+                    size_hint: (0.75, 0.45833)
+                    text: "Keuring"
+                    font_size: 0.4*self.height
+                    font_name: 'Fonts/Biko_Bold.otf'
+                    color: (233/255, 233/255, 251/255, 255/255)
+                    outline_color: (32/255, 32/255, 32/255)
+                    outline_width: 1
+                    background_normal: ''
+                    background_color: (0/255, 128/255, 255/255, 255/255)
+                    canvas.before:
+                        Color:
+                            rgba: self.background_color
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos
+                        Color:
+                            rgba:(32/255, 32/255, 32/255, 255/255)
+                        Line:
+                            width: 1.5
+                            rectangle: self.x, self.y, self.width, self.height
+                    on_release: app.root.popup_attraction.show_inlogscreen(app.root.popup_attraction.popup_inspection)
+        BoxLayout:
+            size_hint: (0.3, 1)
+            orientation: 'vertical'
+            
+            AnchorLayout:
+                anchor_x: 'right'
+                anchor_y: 'center'    
+                background_color: (233/255, 233/255, 251/255, 255/255)
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos 
+                    
+                Label:
+                    id: attr_stopwatch
+                    size_hint: (0.75, 0.7)
+                    text: (root.check_time)
+                    font_size: 0.7*self.height
+                    font_name: 'Fonts/DS-DIGIT.ttf'
+                    color: (0/255, 255/255, 0/255, 255/255)
+                    background_color: (0/255, 0/255, 0/255, 255/255)
+                    canvas.before:
+                        Color:
+                            rgba: self.background_color
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos
+                        Color:
+                            rgba:(32/255, 32/255, 32/255, 255/255)
+                        Line:
+                            width: 1.5
+                            rectangle: self.x, self.y, self.width, self.height
+
+    BoxLayout:
+        size_hint:(1, 0.1)
+        orientation: 'horizontal'
+
+        BoxLayout:
+            size_hint: (0.25, 1)
+            orientation: 'vertical'
+
+            Label:
+                text: "Duur Ochtendcheck:"
+                text_size: self.size
+                halign: 'left'
+                font_size: 0.55*self.height
+                bold: True
+                color: (32/255, 32/255, 32/255, 255/255)
+            
+            Label:
+                text: "Duur Grootonderhoud:"
+                text_size: self.size
+                halign: 'left'
+                font_size: 0.55*self.height
+                bold: True
+                color: (32/255, 32/255, 32/255, 255/255)
+        
+        BoxLayout:
+            size_hint: (0.2, 1)
+            orientation: 'vertical'
+
+            BoxLayout:
+                size_hint: (1, 0.5)
+                orientation: 'horizontal'
+
+                Label:
+                    size_hint: (0.15, 1) 
+                    text: root.attr_durance_morningcheck
+                    text_size: self.size
+                    halign: 'left'
+                    font_size: 0.55*self.height
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    size_hint: (0.85, 1)
+                    text: "minuten"
+                    text_size: self.size
+                    halign: 'left'
+                    font_size: 0.55*self.height
+                    color: (32/255, 32/255, 32/255, 255/255)
+            
+            BoxLayout:
+                size_hint: (1, 0.5)
+                orientation: 'horizontal'
+
+                Label:
+                    size_hint: (0.15, 1)
+                    text: root.attr_durance_maintance
+                    text_size: self.size
+                    halign: 'left'
+                    font_size: 0.55*self.height
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    size_hint: (0.85, 1)
+                    text: "dag(en)"
+                    text_size: self.size
+                    halign: 'left'
+                    font_size: 0.55*self.height
+                    color: (32/255, 32/255, 32/255, 255/255)
+        
+        BoxLayout:
+            size_hint: (0.25, 1)
+            orientation: 'vertical'
+
+            AnchorLayout:
+                anchor_x: 'left'
+                anchor_y: 'center'    
+                background_color: (233/255, 233/255, 251/255, 255/255)
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos  
+
+                Button:
+                    size_hint: (0.75, 0.8708)
+                    text: "Onderhoud"
+                    font_size: 0.4*self.height
+                    font_name: 'Fonts/Biko_Bold.otf'
+                    color: (233/255, 233/255, 251/255, 255/255)
+                    outline_color: (32/255, 32/255, 32/255)
+                    outline_width: 1
+                    background_normal: ''
+                    background_color: (0/255, 128/255, 255/255, 255/255)
+                    canvas.before:
+                        Color:
+                            rgba: self.background_color
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos
+                        Color:
+                            rgba:(32/255, 32/255, 32/255, 255/255)
+                        Line:
+                            width: 1.5
+                            rectangle: self.x, self.y, self.width, self.height
+                    on_release: app.root.popup_attraction.show_inlogscreen(app.root.popup_attraction.popup_maintance)
+
+        BoxLayout:
+            size_hint: (0.3, 1)
+            orientation: 'vertical'
+            
+            AnchorLayout:
+                anchor_x: 'right'
+                anchor_y: 'center'   
+                background_color: (233/255, 233/255, 251/255, 255/255)
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos  
+
+                Button:
+                    id: btn_check
+                    size_hint: (0.75, 1)
+                    text: "Start Check"
+                    font_size: 0.45*self.height
+                    font_name: 'Fonts/Biko_Bold.otf'
+                    color: (32/255, 32/255, 32/255, 255/255)
+                    outline_color: (233/255, 233/255, 251/255)
+                    outline_width: 1
+                    background_normal: ''
+                    background_color: (102/255, 204/255, 0/255, 255/255)
+                    canvas.before:
+                        Color:
+                            rgba: self.background_color
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos
+                        Color:
+                            rgba:(32/255, 32/255, 32/255, 255/255)
+                        Line:
+                            width: 1.5
+                            rectangle: self.x, self.y, self.width, self.height
+                    on_press: root.start_timer()
+                    on_release: root.maintain_buttonstate()
+
+    BoxLayout:
+        size_hint:(1, 0.2)
+        orientation: 'horizontal'
+
+        BoxLayout:
+            size_hint: (0.25, 1)
+            orientation: 'vertical'
+
+            Label:
+                text: "Onderhoudsbeurt 1:"
+                text_size: self.size
+                halign: 'left'
+                font_size: 0.525*self.height
+                color: (32/255, 32/255, 32/255, 255/255)
+            
+            Label:
+                text: "Onderhoudsbeurt 2:"
+                text_size: self.size
+                halign: 'left'
+                font_size: 0.525*self.height
+                color: (32/255, 32/255, 32/255, 255/255)
+
+            Label:
+                text: "Onderhoudsbeurt 3:"
+                text_size: self.size
+                halign: 'left'
+                font_size: 0.525*self.height
+                color: (32/255, 32/255, 32/255, 255/255)
+            
+            Label:
+                text: "Onderhoudsbeurt 4:"
+                text_size: self.size
+                halign: 'left'
+                font_size: 0.525*self.height
+                color: (32/255, 32/255, 32/255, 255/255)
+        
+        BoxLayout:
+            size_hint: (0.2, 1)
+            orientation: 'vertical'
+            spacing: '5dp'
+
+            Button:
+                id: btn_maintance1
+                size_hint: (0.625, 1)
+                text: root.attr_maintance_1
+                font_size: 0.6*self.height
+                font_name: 'Fonts/Biko_Bold.otf'
+                color: (32/255, 32/255, 32/255, 255/255)
+                background_normal: ''
+                background_color: (255/255, 0/255, 0/255, 255/255)
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                    Color:
+                        rgba:(32/255, 32/255, 32/255, 255/255)
+                    Line:
+                        width: 1.5
+                        rectangle: self.x, self.y, self.width, self.height
+                on_press: app.root.popup_attraction.show_passwordscreen(root.attr_maintance_1, root.attraction.adm_maintance.maintance_1, self) if root.attr_check1 == "Planned" else None
+            
+                
+            Button:
+                id: btn_maintance2
+                size_hint: (0.625, 1)
+                text: root.attr_maintance_2
+                font_size: 0.6*self.height
+                font_name: 'Fonts/Biko_Bold.otf'
+                color: (32/255, 32/255, 32/255, 255/255)
+                background_normal: ''
+                background_color: (255/255, 0/255, 0/255, 255/255)
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                    Color:
+                        rgba:(32/255, 32/255, 32/255, 255/255)
+                    Line:
+                        width: 1.5
+                        rectangle: self.x, self.y, self.width, self.height 
+                on_press: app.root.popup_attraction.show_passwordscreen(root.attr_maintance_2, root.attraction.adm_maintance.maintance_2, self)
+
+            Button:
+                id: btn_maintance3
+                size_hint: (0.625, 1)
+                text: root.attr_maintance_3
+                font_size: 0.6*self.height
+                font_name: 'Fonts/Biko_Bold.otf'
+                color: (32/255, 32/255, 32/255, 255/255)
+                background_normal: ''
+                background_color: (255/255, 0/255, 0/255, 255/255)
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                    Color:
+                        rgba:(32/255, 32/255, 32/255, 255/255)
+                    Line:
+                        width: 1.5
+                        rectangle: self.x, self.y, self.width, self.height
+                on_press: app.root.popup_attraction.show_passwordscreen(root.attr_maintance_3, root.attraction.adm_maintance.maintance_3, self)
+                
+            Button:
+                id: btn_maintance4
+                size_hint: (0.625, 1)
+                text: root.attr_maintance_4
+                font_size: 0.6*self.height
+                font_name: 'Fonts/Biko_Bold.otf'
+                color: (32/255, 32/255, 32/255, 255/255)
+                background_normal: ''
+                background_color: (255/255, 0/255, 0/255, 255/255)
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                    Color:
+                        rgba:(32/255, 32/255, 32/255, 255/255)
+                    Line:
+                        width: 1.5
+                        rectangle: self.x, self.y, self.width, self.height
+                on_press: app.root.popup_attraction.show_passwordscreen(root.attr_maintance_4, root.attraction.adm_maintance.maintance_4, self)
+        
+        BoxLayout:
+            size_hint: (0.25, 1)
+            orientation: 'vertical'
+            spacing: '5dp'
+
+            Button:
+                id: btn_rapport1
+                size_hint: (0.6, 1)
+                text: "Rapport"
+                font_size: 0.55*self.height
+                font_name: 'Fonts/Biko_Bold.otf'
+                color: (32/255, 32/255, 32/255, 80/255)
+                background_normal: ''
+                background_color: (233/255, 233/255, 251/255, 255/255)
+                line_color: (32/255, 32/255, 32/255, 80/255)
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                    Color:
+                        rgba: self.line_color
+                    Line:
+                        width: 1.5
+                        rectangle: self.x, self.y, self.width, self.height
+                on_press: root.open_rapport(root.attraction.adm_maintance.rapport_1)
+            
+            Button:
+                id: btn_rapport2
+                size_hint: (0.6, 1)
+                text: "Rapport"
+                font_size: 0.55*self.height
+                font_name: 'Fonts/Biko_Bold.otf'
+                color: (32/255, 32/255, 32/255, 80/255)
+                background_normal: ''
+                background_color: (233/255, 233/255, 251/255, 255/255)
+                line_color: (32/255, 32/255, 32/255, 80/255)
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                    Color:
+                        rgba: self.line_color
+                    Line:
+                        width: 1.5
+                        rectangle: self.x, self.y, self.width, self.height
+                on_press: root.open_rapport(root.attraction.adm_maintance.rapport_2)
+            
+            Button:
+                id: btn_rapport3
+                size_hint: (0.6, 1)
+                text: "Rapport"
+                font_size: 0.55*self.height
+                font_name: 'Fonts/Biko_Bold.otf'
+                color: (32/255, 32/255, 32/255, 80/255)
+                background_normal: ''
+                background_color: (233/255, 233/255, 251/255, 255/255)
+                line_color: (32/255, 32/255, 32/255, 80/255)
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                    Color:
+                        rgba: self.line_color
+                    Line:
+                        width: 1.5
+                        rectangle: self.x, self.y, self.width, self.height
+                on_press: root.open_rapport(root.attraction.adm_maintance.rapport_3)
+            
+            Button:
+                id: btn_rapport4
+                size_hint: (0.6, 1)
+                text: "Rapport"
+                font_size: 0.55*self.height
+                font_name: 'Fonts/Biko_Bold.otf'
+                color: (32/255, 32/255, 32/255, 80/255)
+                background_normal: ''
+                background_color: (233/255, 233/255, 251/255, 255/255)
+                line_color: (32/255, 32/255, 32/255, 80/255)
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                    Color:
+                        rgba: self.line_color
+                    Line:
+                        width: 1.5
+                        rectangle: self.x, self.y, self.width, self.height
+                on_press: root.open_rapport(root.attraction.adm_maintance.rapport_4)
+
+        BoxLayout:
+            size_hint: (0.3, 1)
+            orientation: 'vertical'
+            
+            AnchorLayout:
+                anchor_x: 'right'
+                anchor_y: 'center'    
+                background_color: (233/255, 233/255, 251/255, 255/255)
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos  
+
+                Button:
+                    id: btn_malfunction
+                    size_hint: (0.75, 0.7)
+                    text: "STORING"
+                    font_size: 0.5*self.height
+                    font_name: 'Fonts/Biko_Bold.otf'
+                    color: (255/255, 255/255, 255/255, 255/255)
+                    outline_color: (32/255, 32/255, 32/255)
+                    outline_width: 1
+                    background_normal: ''
+                    background_color: (255/255, 0/255, 0/255, 255/255)
+                    canvas.before:                   
+                        Color:
+                            rgba: self.background_color
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos
+                        Color:
+                            rgba:(32/255, 32/255, 32/255, 255/255)
+                        Line:
+                            width: 1.5
+                            rectangle: self.x, self.y, self.width, self.height
+                    on_press: root.malfunction_attraction()
+                    on_release: 
+                        root.update_content(),                         
+
+    BoxLayout:
+        size_hint:(1, 0.24)
+        orientation: 'horizontal'
+
+        BoxLayout:
+            size_hint: (0.25, 1)
+            orientation: 'vertical'
+
+            BoxLayout:
+                size_hint: (1, 0.57)
+                orientation: 'vertical'
+
+                Label:
+                    text: root.attr_property_1
+                    text_size: self.size
+                    halign: 'left'
+                    bold: True
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_property_2
+                    text_size: self.size
+                    halign: 'left'
+                    bold: True
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_property_3
+                    text_size: self.size
+                    halign: 'left'
+                    bold: True
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_property_4
+                    text_size: self.size
+                    halign: 'left'
+                    bold: True
+                    color: (32/255, 32/255, 32/255, 255/255)
+            
+            BoxLayout:
+                size_hint: (1, 0.43)
+                orientation: 'vertical'
+
+                Label:
+                    text: root.attr_property_9
+                    text_size: self.size
+                    halign: 'left'
+                    bold: True
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_property_10
+                    text_size: self.size
+                    halign: 'left'
+                    bold: True
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_property_11
+                    text_size: self.size
+                    halign: 'left'
+                    bold: True
+                    color: (32/255, 32/255, 32/255, 255/255)
+        
+        BoxLayout:
+            size_hint: (0.20, 1)
+            orientation: 'vertical'
+
+            BoxLayout:
+                size_hint: (1, 0.57)
+                orientation: 'vertical'
+
+                Label:
+                    text: root.attr_info_1
+                    text_size: self.size
+                    halign: 'left' 
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_info_2
+                    text_size: self.size
+                    halign: 'left'
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_info_3
+                    text_size: self.size
+                    halign: 'left' 
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_info_4
+                    text_size: self.size
+                    halign: 'left'
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+            BoxLayout:
+                size_hint: (1, 0.43)
+                orientation: 'vertical'
+
+                Label:
+                    text: root.attr_info_9 
+                    text_size: self.size
+                    halign: 'left'
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_info_10
+                    text_size: self.size
+                    halign: 'left'
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_info_11
+                    text_size: self.size
+                    halign: 'left'
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+        BoxLayout:
+            size_hint: (0.2, 1)
+            orientation: 'vertical'
+
+            BoxLayout:
+                size_hint: (1, 0.57)
+                orientation: 'vertical'
+
+                Label:
+                    text: root.attr_property_5
+                    text_size: self.size
+                    halign: 'left'
+                    bold: True
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_property_6
+                    text_size: self.size
+                    halign: 'left'
+                    bold: True
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_property_7
+                    text_size: self.size
+                    halign: 'left'
+                    bold: True
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_property_8
+                    text_size: self.size
+                    halign: 'left'
+                    bold: True
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+            BoxLayout:
+                size_hint: (1, 0.43)
+                orientation: 'vertical'
+
+                Label:
+                    text: root.attr_property_12
+                    text_size: self.size
+                    halign: 'left'
+                    bold: True
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_property_13
+                    text_size: self.size
+                    halign: 'left'
+                    bold: True
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_property_14
+                    text_size: self.size
+                    halign: 'left'
+                    bold: True
+                    color: (32/255, 32/255, 32/255, 255/255)
+   
+        BoxLayout:
+            size_hint: (0.1, 1)
+            orientation: 'vertical'
+
+            BoxLayout:
+                size_hint: (1, 0.57)
+                orientation: 'vertical'
+
+                Label:
+                    text: root.attr_info_5          
+                    text_size: self.size
+                    halign: 'left'
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_info_6
+                    text_size: self.size
+                    halign: 'left'
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_info_7
+                    text_size: self.size
+                    halign: 'left'
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_info_8
+                    text_size: self.size
+                    halign: 'left'
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+            BoxLayout:
+                size_hint: (1, 0.43)
+                orientation: 'vertical'
+
+                Label:
+                    text: root.attr_info_12
+                    text_size: self.size
+                    halign: 'left'
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_info_13
+                    text_size: self.size
+                    halign: 'left'
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+                Label:
+                    text: root.attr_info_14
+                    text_size: self.size
+                    halign: 'left'
+                    color: (32/255, 32/255, 32/255, 255/255)
+
+        BoxLayout:
+            size_hint: (0.25, 1)
+            orientation: 'vertical'
+            
+            AnchorLayout:
+                anchor_x: 'right'
+                anchor_y: 'center'    
+                background_color: (233/255, 233/255, 251/255, 255/255)
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos 
+                    
+                Label:
+                    id: attr_infopanel
+                    size_hint: (0.9, 1)
+                    text: ""
+                    font_size: 0.1*self.height
+                    text_size: self.size
+                    halign: 'left'
+                    valign: 'top'
+                    color: (0/255, 255/255, 0/255, 255/255)
+                    background_color: (0/255, 0/255, 0/255, 255/255)
+                    canvas.before:
+                        Color:
+                            rgba: self.background_color
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos
+                        Color:
+                            rgba:(32/255, 32/255, 32/255, 255/255)
+                        Line:
+                            width: 1.5
+                            rectangle: self.x, self.y, self.width, self.height
