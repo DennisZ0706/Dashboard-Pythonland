@@ -86,7 +86,7 @@ This can be done using the "onderhoud" button. When the attraction has undergone
 ## Preview
 
 ![screenshot_mainscreen](Showcase/screenshot_mainscreen.png?raw=true "Mainscreen")<br>
-Mainscree
+Mainscreen
 
 ![screenshot_popup](Showcase/screenshot_popup.png?raw=true "Popup attraction")<br>
 Popup attraction
