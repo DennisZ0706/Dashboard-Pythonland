@@ -2,9 +2,9 @@
 
 ## The App
 
-Application for the technical service of Pythonland, intended for getting information and properties from all attractions and for administering, planning and monitoring inspections, maintenance and morning checks.
+Application build for the technical service of Pythonland, intended for getting information and properties from all attractions and for administering, planning and monitoring inspections, maintenance and morning checks.
 
-Application shows an interactive map of the park on which all attractions are depicted. And next to this map, all attractions are shown separately in a status bar with their status and possible warning signals. 
+Application shows an interactive map of the park on which all attractions are depicted. And next to this map, all attractions are shown separately in a status bar with their own status and possible warning signals. 
 
 Above the map, all totals are shown for each status an attraction can achieve and the total number of attractions that are present at the theme park.
 
@@ -50,7 +50,7 @@ By clicking on the image on the map, or clicking on the status bar of the attrac
 
 There are 4 different statuses an attraction can achieve. An attraction can be turned off (orange), on morning check (yellow), on running (green), or on malfunction (red). 
 
-Every day a morning check must be carried out on each attraction before it can be started. This can be registered and tracked using the application. 
+Every day a morning check must be carried out on each attraction before it is allowed to start. This can be registered and tracked using the application. 
 A morning check can be started in the pop-up of the relevant attraction with the button "Start Check". The attraction's status will change from orange to yellow and the timer will begin to count down. When the minimum time required for the morning check of the attraction has expired and the timer reaches zero, the morning check can be completed with the same button. The text of the button will change to "Voltooi Check" when this is possible and the status of the attraction will change to green, after which the attraction can be started.
 
 Each attraction can be manually set to red status to indicate that an attraction is on malfunction and cannot be started. The big red button in the pop-up with text "Storing" serves this purpose.
@@ -85,17 +85,23 @@ This can be done using the "onderhoud" button. When the attraction has undergone
 
 ## Preview
 
-![screenshot_mainscreen](Showcase/screenshot_mainscreen.png?raw=true "Mainscreen")
+![screenshot_mainscreen](Showcase/screenshot_mainscreen.png?raw=true "Mainscreen")<br>
+Mainscree
 
-![screenshot_popup](Showcase/screenshot_popup.png?raw=true "Popup attraction")
+![screenshot_popup](Showcase/screenshot_popup.png?raw=true "Popup attraction")<br>
+Popup attraction
 
-![screenshot_login](Showcase/screenshot_login.png?raw=true "Login to make changes")
+![screenshot_login](Showcase/screenshot_login.png?raw=true "Login to make changes")<br>
+Login to make changes
 
-![screenshot_maintance](Showcase/screenshot_maintance.png?raw=true "Plan maintance")
+![screenshot_maintance](Showcase/screenshot_maintance.png?raw=true "Plan maintance")<br>
+Plan maintance
 
-![screenshot_morningcheck](Showcase/screenshot_morningcheck.png?raw=true "Attraction on morningcheck")
+![screenshot_morningcheck](Showcase/screenshot_morningcheck.png?raw=true "Attraction on morningcheck")<br>
+Attraction on morningcheck
 
-![screenshot_malfunction](Showcase/screenshot_malfunction.png?raw=true "Attraction on malfunction")
+![screenshot_malfunction](Showcase/screenshot_malfunction.png?raw=true "Attraction on malfunction")<br>
+Attraction on malfunction
 
 
 
